@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Complete Page Example - Image Slider Maker</title>
+    <link type="text/css" rel="Stylesheet" href="css/imageslidermaker.css" />
+    <link href="http://fonts.googleapis.com/css?family=Titillium+Web:300,400" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bjqs-1.3-imageslidermaker.js"></script>
+    <script>
+      $(function() {
+        $("#imageslider").bjqs({
+          width: 260,
+          height: 380,
+          animtype: "slide",
+          responsive: false,
+          automatic: true,
+          keyboardnav: false,
+          markertype: "1",
+          prevtext: "Prev",
+          nexttext: "Next"
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+
+
+    <!-- Generated using ImageSliderMaker.com -->
+    <div id="imageslider">
+      <ul class="bjqs">
+        <li class="slide-1">
+          <div class="caption">Slide 1 Caption</div>
+        </li>
+        <li class="slide-2">
+          <div class="caption">Slide 2 Caption</div>
+        </li>
+        <li class="slide-3">
+          <div class="caption">Slide 3 Caption</div>
+        </li>
+      </ul>
+    </div>
+
+  </body>
+</html>

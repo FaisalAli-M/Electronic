@@ -1,0 +1,68 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body{
+	background:grey
+}
+.wrapper{
+	width:1100px;
+	height:1000px;
+	background:grey;
+	margin:auto
+}
+.header {
+	height:150px ;
+	width: 1100px ;
+	background:url(welcome_admin.png) no-repeat;
+	 background-size: cover;
+	 border-bottom: 6px solid black
+}
+.left {
+	height:850px ;
+	width: 894px ;
+	background:url(admin_bg2.png) ;
+	 background-size: cover;
+	 float:left
+	 
+}
+.right{
+	height:850px ;
+	width: 200px ;
+	background:red;
+	float:right;
+	border-left: 6px solid black
+}
+.right  a {
+	color: white;
+	text-decoration:none;
+	display:block;
+	padding:7px;
+	margin-bottom:8px;
+	text-align:left;
+	font-size:17px
+}
+.right a:hover {
+	text-decoration:underline;
+	font-weight:bolder
+}

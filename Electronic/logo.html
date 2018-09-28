@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Animated text fill</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Neuton|Oswald'>
+
+      <style>
+      
+      .lo {
+  
+  background: #090d00;
+  color: black;
+  text-align: center;
+  margin: 0;
+          
+}
+
+.p {
+
+  text-transform: uppercase;
+  letter-spacing: .4em;
+  display: inline-block;
+  border: 6px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 0em 0em;
+  position: absolute;
+  top: -37px;
+  left: 120px;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+.p span {
+  font: 32px "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0em 0 0em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url('animated_text_fill.png') repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+    <div class="lo">
+  <p class="p" style="font-size:10px">
+  where you Come First
+  <span>
+    Reliable <br> Electronics 
+  </span>
+  &mdash;Satisfaction our Prioroty&mdash;
+</p>
+    </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+</body>
+</html>
